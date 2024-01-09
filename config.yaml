@@ -1,0 +1,14 @@
+port: ":4000"
+env: "debug"
+limiter:
+  rps: 2
+  burst: 2
+  enabled: true
+mailer:
+  host: "sandbox.smtp.mailtrap.io"
+  port: 25
+  username: "5705302644bc8d"
+  password: "06c7ce377910aa"
+  sender: "Greenlight <no-reply@anwarzadeh.net>"
+cors:
+  trusted_origins: ["http://localhost:9000/", "http://localhost:9001/"]
