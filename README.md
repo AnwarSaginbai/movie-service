@@ -2,9 +2,13 @@
 
 Netflix-type service
 
-Сервис с CRUD операциями, базой данных, аутентификацией, метриками и т.д. (production ready). 
+Movie-service с CRUD операциями, NoSQL базой данных, аутентификацией, метриками, рассылкой почты и т.д. (production ready). 
 
-Сервис сделан по книге Alex Edwards "Lets go further" с некоторыми изменениями:
-1. Вместо posgresql используется mongodb
-2. Вместо flag используется конфиг-файл 
+**Docker**:
+
+`docker run -d --name mongodb -e MONGO_INITDB_ROOT_USERNAME=admin -e MONGO_INITDB_ROOT_PASSWORD=password -p 27017:27017 mongo:4.4.3`
+
+**Run**:
+
+`make run`
 
